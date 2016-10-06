@@ -1,3 +1,9 @@
+section{
+	padding: 100px 0px;
+}
+.container{
+	text-align: center;
+}
 .brand{
 	width:20px;
 	height: 20px;
@@ -5,6 +11,24 @@
 .right{
 	float:right;
 }
+.constant-padding{
+	padding: 0 115px;
+}
 header{
-	padding: 0 115px; 
+	position: absolute;
+	top:0px;
+	width: 100%;
+}
+.outer{
+	background-image: url("../images/header.jpg");
+	background-size: cover;
+	background-position: center;
+	display: table;
+	height: 100%;
+	width:100%; 
+}
+.outer .container{
+	display: table-cell;
+	height:73vh;
+	vertical-align: middle;
 }
