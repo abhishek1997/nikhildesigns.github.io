@@ -24,11 +24,25 @@ header{
 	background-size: cover;
 	background-position: center;
 	display: table;
-	height: 100%;
 	width:100%; 
 }
 .outer .container{
 	display: table-cell;
-	height:73vh;
+	height:70vh;
 	vertical-align: middle;
+}
+.project{
+	padding:0px !important;
+	overflow: hidden;
+}
+.project .project-image{
+
+}
+@media only screen and (max-width:767px){
+	section{
+		padding: 50px 0 60px;
+	}
+	.constant-padding{
+		padding: 0 15px;
+	}
 }
