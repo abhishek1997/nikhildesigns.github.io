@@ -3,6 +3,7 @@ section{
 }
 .container{
 	text-align: center;
+	padding: 0;
 }
 .brand{
 	width:20px;
@@ -15,7 +16,7 @@ section{
 	padding: 0 115px;
 }
 header{
-	position: absolute;
+	position: fixed;
 	top:0px;
 	width: 100%;
 }
@@ -31,12 +32,8 @@ header{
 	height:70vh;
 	vertical-align: middle;
 }
-.project{
-	padding:0px !important;
-	overflow: hidden;
-}
-.project .project-image{
-
+.img-responsive{
+	display: inline-block !important;
 }
 @media only screen and (max-width:767px){
 	section{
@@ -45,4 +42,12 @@ header{
 	.constant-padding{
 		padding: 0 15px;
 	}
+}
+.skills ul{
+	list-style: none;
+	padding: 0px;
+}
+.row{
+	margin-right:-15px;
+	margin-left: -15px;
 }
