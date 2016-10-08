@@ -10,5 +10,18 @@ $(document).ready(function(){
         $("#cd-lateral-nav").css("transform","translateX(300px)");
         $(".overlay").css({"display":"none","opacity":"0"});
     });
+    $(window).scroll(function(){
+        if ($(this).scrollTop() > 1){  
+            $('header').addClass("sticky");
+            $(".scroll-btn").removeClass("hidden-md");
+            $(".scroll-btn").removeClass("hidden-lg");
+        }
+    else{
+        $('header').removeClass("sticky");
+        $(".scroll-btn").addClass("hidden-md");
+        $(".scroll-btn").addClass("hidden-lg");
+        }
+    });
 }
 );
+
