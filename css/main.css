@@ -43,11 +43,37 @@ header{
 		padding: 0 15px;
 	}
 }
-.skills ul{
+#skills ul{
 	list-style: none;
 	padding: 0px;
 }
 .row{
 	margin-right:-15px;
 	margin-left: -15px;
+}
+.blog{
+	text-align: left;
+}
+#contact  ul{
+	list-style: none;
+	padding: 0;
+}
+#contact .social{
+	margin-bottom: 0;
+    text-align: center;
+    margin-top: 5px;
+    padding-top: 10px;
+}
+#contact ul li{
+	padding: 10px 0;
+}
+#contact ul.social li a i.social-icon{
+    padding: 0 25px 0 0;
+    font-size: 18px;
+    width: 30px;
+    margin: 7px;
+}
+#footer img{
+	width: 40px;
+	display: inline-block;
 }
