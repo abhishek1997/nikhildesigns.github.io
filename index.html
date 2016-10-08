@@ -9,26 +9,81 @@
 	<meta name="viewport" content="width=device-width, intial-scale=1"> 
 	<link rel="icon" type="image/ico" href="images/logo.ico">
 	<link rel="stylesheet" href="css/font-awesome.css">
+	<script src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
 </head>
 <body>
 	<main>
-		<header>
-			<a class="navbar-brand" href="/"> 
+		<div class="overlay"></div>
+		<nav id="cd-lateral-nav">
+				<div class="exit">
+					<i class="fa fa-close fa-lg"></i>
+				</div>
+		        <ul class="cd-navigation links">
+		            <li class="top-link"><a href="#about">About</a></li>
+		            <li><a href="#work">Work</a></li>
+		            <li><a href="#blog">Blog</a></li>
+		            <li><a href="#contact">Contact</a></li>
+		            <li><a href="Resume.pdf">Hire me</a></li>
+		        </ul>
+		        <ul class="cd-navigation social-media">
+					<li class="social">
+						<a href="//instagram.com/yadavnikhil012">
+							<i class="social-icon fa fa-instagram" title="Follow me on Instagram"></i>
+						</a>
+						<a href="//www.facebook.com/yadavnik01">
+							<i class="social-icon fa fa-facebook" title="Follow me on Facebook"></i>
+						</a>
+						<a href="//wwww.behance.net/yadavnikhil012">
+							<i class="social-icon fa fa-behance" title="Follow me on Behance"></i>
+						</a>
+						<a href="//www.dribbble.com/yadavnikhil012">
+							<i class="social-icon fa fa-dribbble" title="Follow me on Dribbbble"></i>
+						</a>
+						<a href="//www.medium.com/@yadavnikhil012">
+							<i class="social-icon fa fa-medium" title="Follow me on Medium"></i>
+						</a>
+						<a href="//www.twitter.com/yadavnikhil012">
+							<i class="social-icon fa fa-twitter" title="Follow me on Twitter"></i>
+						</a>
+						<a href="//www.linkedin.com/in/yadavnikhil012">
+							<i class="social-icon fa fa-linkedin" title="Follow me on Linkedin"></i>
+						</a>
+					</li>
+		        </ul>
+		        <ul class="cd-navigation footer-border">
+		            <li>
+		        		Nikhil Yadav<i class="fa fa-copyright"></i> 2016.
+		        	</li>
+		        </ul>
+    	</nav>
+		<header style="z-index:99">
+			<a class="navbar-brand" href="#"> 
 					<img src="images/logo.png" class="brand">
 			</a>
 			<nav class="right">
 				<ul class="nav navbar-nav">
-					<li>
+					<li class="hidden-xs hidden-sm">
 						<a href="#about">About</a>
 					</li>
-					<li>
+					<li class="hidden-xs hidden-sm">
 						<a href="#work">Work</a>
 					</li>
-					<li>
+					<li class="hidden-xs hidden-sm">
 						<a href="#blog">Blog</a>
+					</li class="hidden-xs hidden-sm">
+					<li class="hidden-xs hidden-sm">
+						<a href="#contact">Contact</a>
 					</li>
-					<li>
-						<a href="#contact">Hire me</a>
+					<li  class="hidden-xs hidden-sm" style="padding-top:8px;padding-right:15px">
+						<button type="button" class="btn btn-success">
+							<a href="Resume.pdf">Hire me</a>
+						</button>
+					</li>
+					<li class="hidden-md hidden-lg">
+						<a class="trigger-menu">
+							<i class="fa fa-bars"></i>
+						</a>
 					</li>
 				</ul>
 			</nav>
@@ -39,9 +94,13 @@
 				<div class="container constant-padding">
 					<h1>Nikhil Yadav</h1>
 					<h3>Graphic Designer & UI Developer</h3>
-					<div class="button">
-						<a href="#about">Know more <i class="fa fa-chevron-down"></i></a>
-						<a href="Resume.pdf">Hire me</a>
+					<div class="btn">
+						<button type="button" class="btn btn-default">
+							<a href="#about">Know more <i class="fa fa-chevron-down"></i></a>
+						</button>
+						<button type="button" class="btn btn-success">
+							<a href="Resume.pdf">Hire me</a>
+						</button>
 					</div>
 				</div>
 			</div>
