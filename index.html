@@ -11,9 +11,16 @@
 	<link rel="stylesheet" href="css/font-awesome.css">
 	<script src="js/jquery-1.9.1.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/jquery.particleground.js"></script>
+    <!--<script type="text/javascript">
+		$(window).load(function() {
+			$("#loader").fadeOut("slow");
+		});
+	</script>-->
 </head>
 <body>
-	<main>
+	<div id="loader"></div>
+	<main id="main-content" class="animate-bottom">
 		<div class="overlay"></div>
 		<nav id="cd-lateral-nav">
 				<div class="exit">
@@ -22,6 +29,7 @@
 		        <ul class="cd-navigation links">
 		            <li class="top-link"><a href="#about">About</a></li>
 		            <li><a href="#work">Work</a></li>
+		            <li><a href="#skills">Skills</a></li>
 		            <li><a href="#blog">Blog</a></li>
 		            <li><a href="#contact">Contact</a></li>
 		            <li><a href="Resume.pdf">Hire me</a></li>
@@ -53,13 +61,13 @@
 		        </ul>
 		        <ul class="cd-navigation footer-border">
 		            <li>
-		        		Nikhil Yadav<i class="fa fa-copyright"></i> 2016.
+		        		Nikhil Yadav <i class="fa fa-copyright"></i> 2016.
 		        	</li>
 		        </ul>
     	</nav>
 		<header style="z-index:99">
 			<a class="navbar-brand" href="#"> 
-					<img src="images/logo.png" class="brand">
+					<img src="images/logo_white.png" class="brand">
 			</a>
 			<nav class="right">
 				<ul class="nav navbar-nav">
@@ -68,6 +76,9 @@
 					</li>
 					<li class="hidden-xs hidden-sm">
 						<a href="#work">Work</a>
+					</li>
+					<li class="hidden-xs hidden-sm">
+						<a href="#skills">Skills</a>
 					</li>
 					<li class="hidden-xs hidden-sm">
 						<a href="#blog">Blog</a>
@@ -93,9 +104,9 @@
 			<div class="outer">
 				<div class="container constant-padding">
 					<h1>Nikhil Yadav</h1>
-					<h3>Graphic Designer & UI Developer</h3>
-					<div>
-						<button type="button" class="btn btn-default">
+					<h4>Graphic Designer & UI Developer</h4>
+					<div class="cover-btns">
+						<button id="know-more" type="button" class="btn btn-default">
 							<a href="#about">Know more <i class="fa fa-chevron-down"></i></a>
 						</button>
 						<button type="button" class="btn btn-success">
@@ -218,7 +229,7 @@
 					</div>
 				</div>
 				<div class="other-text follow-link">
-					View more stories on <a href="https://medium.com/@yadavnikhil012/">Medium</a>
+					<a href="https://medium.com/@yadavnikhil012/">View more stories on Medium</a>
 				</div>
 			</div>
 		</section>

@@ -26,18 +26,26 @@ header{
 .scroll-btn{
 	transition: all 0.4s ease;
 }
+.cover{
+    width:100%;
+    height: 73vh;
+    position: relative;
+    background-color:#16a085; 
+}
 .outer{
-	background-image: url("../images/header.jpg");
-	background-size: cover;
+	/**background-image: url("../images/header.jpg");**/
+    position: absolute;
+    left:0px;
+    top:25vh;
+	/**background-size: cover;
 	background-position: center;
-	display: table;
-	width:100%; 
+	display: table;**/
+	width:100%;
 }
-.outer .container{
+/**.outer .container{
 	display: table-cell;
-	height:73vh;
 	vertical-align: middle;
-}
+}**/
 .img-responsive{
 	display: inline-block !important;
 }
@@ -152,8 +160,6 @@ header{
 #cd-lateral-nav .cd-navigation.footer-border {
     margin: 5px;
     text-align: center;
-    border-bottom: 0;
-    border-top: 1px solid #eee;
     padding: 10px 0 5px;
     display: block;
     position: absolute;
@@ -198,7 +204,7 @@ header{
 }
 #footer{
 	background-color: #333;
-	padding: 70px 0 50px 0;
+	padding: 60px 0 30px 0;
 }
 .copyright-info{
 	margin-top: 5px;
@@ -233,7 +239,7 @@ h1.heading{
     text-align: center;
 }
 .subheading{
-	max-width: 520px;
+	max-width: 560px;
     margin: 20px auto 60px;
     text-align: center;
 }
@@ -251,4 +257,124 @@ h1.heading{
 }
 #skills .heading,#blog .heading{
 	margin-bottom: 60px;
+}
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 9999;
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid #3498db; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+    margin: -75px 0 0 -75px;
+    display: none;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+.animate-bottom {
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+@-webkit-keyframes animatebottom {
+  from {opacity:0 }
+  to { opacity:1 }
+}
+
+@keyframes animatebottom {
+  from{opacity:0 }
+  to{opacity:1 }
+}
+#main-content{
+    transition: all 0.4s ease;
+}
+a:hover{
+    text-decoration: none;
+}
+nav a, header.sticky a{
+    color:#333;
+}
+#know-more, #know-more a, #know-more a .fa{
+    color:#333 !important;
+}
+.cover-btns{
+    margin-top: 20px;
+}
+header.sticky button a, button a, button .fa, .fa-bars,.cover .container,header a{
+    color: #fff;
+}
+.cover h1{
+    font-size: 44px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.cover h4{
+    margin-top: 10px;
+}
+#contact .subheading{
+    margin-bottom: 40px;
+}
+@media only screen and (max-width:767px){
+    .cover .outer h1 {
+        font-size: 26px;
+        margin-bottom: 15px;
+    }
+    .cover .outer h4 {
+        font-size: 16px;
+        margin-bottom: 20px;
+    }
+    .cover{
+        height: 60vh;
+    }
+    body, h1, h2, h3, h4, h5, h6 {
+        font-weight: 400;
+    }
+    h1.heading {
+        font-size: 22px;
+        line-height: 28px;
+    }
+    .subheading {
+        font-size: 14px;
+        line-height: 22px;
+        margin: 10px auto 45px;
+    }
+    .other-text {
+        font-size: 12px!important;
+        line-height: 22px;
+    }
+    #footer {
+        padding: 30px 0 20px;
+    }
+    #footer img{
+        width:20px;
+    }
+    #blog .blog-content p{
+        text-align: center !important;
+    }
+    #blog .blog-content h3{
+        text-align: center !important;
+    }
+    #about p{
+        font-size:10px: 
+    }
+    .outer{
+        top:20vh;
+    }
+    h3{
+        font-size: 14px; 
+    }
+    #skills ul li{
+        font-size:12px; 
+    }
+    #skills .heading, #blog .heading{
+        margin-bottom: 15px;
+    }
 }
