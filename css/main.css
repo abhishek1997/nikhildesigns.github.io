@@ -46,6 +46,17 @@ header{
 	display: table-cell;
 	vertical-align: middle;
 }**/
+hr{
+    border: 2pt solid;
+    color:#16a085;
+    width:50px;
+    padding: 0;
+    margin: 15px auto 30px;
+    border-radius: 40px;
+}
+.follow-link{
+    color:#16a085; 
+}
 .img-responsive{
 	display: inline-block !important;
 }
@@ -64,6 +75,7 @@ header{
 }
 #skills ul li{
 	padding: 10px 0;
+    color: #999;
 }
 .row{
 	margin-right:-15px;
@@ -256,7 +268,7 @@ h1.heading{
     font-weight: 500;
 }
 #skills .heading,#blog .heading{
-	margin-bottom: 60px;
+	margin-bottom: 10px;
 }
 #loader {
     position: absolute;
@@ -322,14 +334,18 @@ header.sticky button a, button a, button .fa, .fa-bars,.cover .container,header 
 #contact .subheading{
     margin-bottom: 40px;
 }
+.btn a:hover{
+    color: inherit;
+}
 @media only screen and (max-width:767px){
     .cover .outer h1 {
         font-size: 26px;
-        margin-bottom: 15px;
+        margin-bottom: 0px;
     }
     .cover .outer h4 {
         font-size: 16px;
         margin-bottom: 20px;
+        margin-top: 5px;
     }
     .cover{
         height: 60vh;
@@ -366,7 +382,7 @@ header.sticky button a, button a, button .fa, .fa-bars,.cover .container,header 
         font-size:10px: 
     }
     .outer{
-        top:20vh;
+        top:40vh;
     }
     h3{
         font-size: 14px; 
@@ -376,5 +392,19 @@ header.sticky button a, button a, button .fa, .fa-bars,.cover .container,header 
     }
     #skills .heading, #blog .heading{
         margin-bottom: 15px;
+    }
+}
+@media only screen and (max-width:769px){
+    #blog .blog-content p{
+        text-align: center !important;
+    }
+    #blog .blog-content h3{
+        text-align: center !important;
+    }
+    .cover{
+        height: 95vh;
+    }
+    .outer{
+        top:40vh;
     }
 }
