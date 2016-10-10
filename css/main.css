@@ -74,7 +74,7 @@ hr{
 	font-size:14px;
 }
 #skills ul li{
-	padding: 10px 0;
+	padding: 5px 0;
     color: #999;
 }
 .row{
@@ -316,10 +316,12 @@ nav a, header.sticky a{
 #know-more, #know-more a, #know-more a .fa{
     color:#333 !important;
 }
-.cover-btns{
-    margin-top: 20px;
+.move-down{
+    position: absolute;
+    bottom: 15px;
+    width: 100%;
 }
-header.sticky button a, button a, button .fa, .fa-bars,.cover .container,header a{
+header.sticky button a, button a, button .fa, .fa-bars,.cover .container,header a, .move-down .fa{
     color: #fff;
 }
 .cover h1{
