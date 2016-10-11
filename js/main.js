@@ -5,7 +5,7 @@ $(document).ready(function(){
             $("#cd-lateral-nav").css("transform","translateX(0px)");
             $(".overlay").css({"display":"block","opacity":"0.6"});
     });
-    $(".links").click(function(){
+    $(".links a").click(function(){
         $("#cd-lateral-nav").css({"visibility":"hidden"});
         $("#cd-lateral-nav").css("transform","translateX(300px)");
         $(".overlay").css({"display":"none","opacity":"0"});
