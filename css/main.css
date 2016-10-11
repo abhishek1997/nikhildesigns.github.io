@@ -85,6 +85,14 @@ hr{
 	.constant-padding{
 		padding: 0 15px;
 	}
+    #contact ul.social li a i.social-icon{
+        font-size: 14px !important;
+        padding-right: 0px !important;
+
+    }
+    .mobile-row{
+        margin: 0 -15px;
+    }
 }
 #skills ul{
 	list-style: none;
@@ -125,7 +133,7 @@ hr{
     padding: 0 25px 0 0;
     font-size: 18px;
     width: 30px;
-    margin: 7px;
+    margin: 6px;
 }
 #footer img{
 	width: 30px;
@@ -158,7 +166,7 @@ hr{
     border-bottom: 1px solid #eee;
     padding-bottom: 15px;
 }
-@media only screen and (min-width: 768px){
+@media only screen and (min-width: 769px){
 #cd-lateral-nav .cd-navigation {
     margin: 20px 0;}
 }
@@ -358,9 +366,6 @@ a:hover,.btn a:hover{
         margin-bottom: 20px;
         margin-top: 5px;
     }
-    .cover{
-        height: 60vh;
-    }
     body, h1, h2, h3, h4, h5, h6 {
         font-weight: 400;
     }
@@ -388,9 +393,6 @@ a:hover,.btn a:hover{
     }
     #blog .blog-content h3{
         text-align: center !important;
-    }
-    .outer{
-        top:40vh;
     }
     h3{
         font-size: 14px; 
