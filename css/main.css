@@ -27,11 +27,26 @@ header{
 	width: 100%;
 	transition: all 0.4s ease;
 }
-#work img:hover, #blog img:hover{
+.project:hover{
+    background-color: white;
+    box-shadow: 0px 4px 12px #ddd;
+    margin-top: -4px;
+}
+.project{
+    padding: 0;
+}
+.project .project-image a img{
+    display: inline-block !important;
+    border: none;
+    padding: 0;
+    border-radius: 0;
+    margin-top: 6px;
+}
+#blog img:hover{
     border: solid 1px #CCC;
-    -moz-box-shadow: 1px 2px 5px #999;
-    -webkit-box-shadow: 1px 2px 5px #999;
-    box-shadow: 1px 2px 5px #999;
+    -moz-box-shadow: 0px 4px 12px #ddd;
+    -webkit-box-shadow: 0px 4px 12px #ddd;
+    box-shadow: 0px 4px 12px #ddd;
     transform:translateY(-6px);
 }
 .scroll-btn{
@@ -233,9 +248,9 @@ hr{
 }
 .sticky{
 	background-color: #fff;
-    -moz-box-shadow: 1px 1px 5px #999;
-    -webkit-box-shadow: 1px 1px 5px #999;
-    box-shadow: 1px 1px 5px #999; 
+    -moz-box-shadow: 1px 1px 5px #ddd;
+    -webkit-box-shadow: 1px 1px 5px #ddd;
+    box-shadow: 1px 1px 5px #ddd; 
 }
 #work,#blog{
 	background-color: #fafafa;
